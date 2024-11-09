@@ -1,2 +1,19 @@
-Use this file to submit the extra credit problem. Be sure to describe your
-process for solving the problem, and not just to give the solution. 
+ß}•IWISHITNEEDNOTHAVEHAPPENEDINM?TIME)ß}–SAID
+FRODO+
+ß}•SODOI)ß}–SAIDGANDALF)ß}•ANDSODOALLWHOLIVETO
+SEESUCHTIMES+BUTTHATISNOTFORTHEMTODECIDE+
+ALLWEHAVETODECIDEISWHATTODOWITHTHETIME
+THATISGIVEN)US+
+
+I'm not sure why but the spaces and punctuation came back as an unrecognized symbols.
+I was able to look for similarities with commonly used letters, namely vowels in this case. 
+I specifically, in line 3 of the text file, it showed DOO which would
+indicate that O is a vowel since no letters are commonly repeated other than vowels. 
+From there, I tested a few simple keys, until (-3) gave me this.
+
+From what I can tell, it says:
+I WISH IT NEED NOT HAVE HAPPENED IN MY TIME SAID
+FRODO SO DO I SAID GANDALF AND SO DO ALL WHO LIVE TO
+SEE SUCH TIMES BUT THAT IS NOT FOR THEM TO DECIDE
+ALL WE HAVE TO DECIDE IS WHAT TO DO WITH THE TIME
+THAT IS GIVEN TO US
