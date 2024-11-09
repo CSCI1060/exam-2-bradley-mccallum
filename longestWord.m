@@ -1,16 +1,72 @@
-function [result] = longestWord( inputFile )
-%
-% inputFile specifies the file whose characters should
-% be analyzed.
-%
-% Periods, commas, apostrophes, and other punctuation
-% marks DO NOT count towards the length of a word.
-% For example, in the sentence “The quick red fox
-% jumped over the lazy brown dog.” the last word is
-% considered to have a length of three (ignoring the
-% period).
-%
-% If inputFile cannot be opened, the function will
-% print a descriptive error message and return the
-% value -1.
-%
+% This function reads a given input file and determines the longest word found within it.
+% Note: All characters are counted as letters, except specifically: ' ', '.', ',', '!', '?'.
+
+% INPUT1 = input file name
+
+function result = longestWord(inputFile)
+
+    % Preliminary information:
+    fID = fopen(inputFile, 'r');
+    streak = 0;
+    highestStreak = 0;
+    
+    % Determining file eligibility:
+    if fID == -1
+
+        error("Input file could not be opened!")
+
+    end
+
+    % Running file:
+    while 1
+
+        % Establishing byte and conditional for while-loop:
+        character = fread(fID, 1);
+
+        if isempty(character)
+
+            break
+
+        end
+
+        % Tracking streak:
+        if character == uint8(' ')
+
+            streak = 0;
+
+        elseif character == uint8('.')
+
+            streak = 0;
+
+        elseif character == uint8(',')
+
+            streak = 0;
+
+        elseif character == uint8('!')
+
+            streak = 0;
+
+        elseif character == uint8('?')
+
+            streak = 0;
+
+        else
+
+            streak = streak + 1;
+
+        end
+
+        % Determining highestStreak:
+        if streak > highestStreak
+
+            highestStreak = streak;
+
+        end
+
+    end
+
+    result = highestStreak;
+
+    fclose(fID);
+
+end
